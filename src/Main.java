@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public class Main {
 	public static void main (String[] args) {
 		Floyd matriz = new Floyd (); //matriz de adyacienia
-		matriz.CamCorto(); //Algoritmo floyd que encuentra el camino más corto
+		matriz.CamCorto(); //Algoritmo floyd que encuentra el camino mÃ¡s corto
 		int selec = 1;
 		int opcion;
 		Scanner scan = new Scanner(System.in);
@@ -48,15 +48,15 @@ public class Main {
 				}
 			}
 			
-			if (selec==2) {
+			else if (selec==2) {
 				System.out.println("El centro del grafo es: ");
 				matriz.CentGrafo();
 			}
 			
-			if (selec==3) {
-				System.out.println("1.Fijar interrupción entre ciudades");
-				System.out.println("2. Fijar nueva conexión");
-				System.out.println("Ingrese una opción: ");
+			else if (selec==3) {
+				System.out.println("1.Fijar interrupciÃ³n entre ciudades");
+				System.out.println("2. Fijar nueva conexiÃ³n");
+				System.out.println("Ingrese una opciÃ³n: ");
 				opcion=scan.nextInt();
 				if (opcion==1) {
 					System.out.println("Ciudad de Origen: ");
